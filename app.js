@@ -80,9 +80,9 @@ creat_card(fruits); //calling function to diplay cards
 
 
 //********************( create_card function with for each loop )********************* */
-function creat_card(productArray) {
-  productArray.forEach(function (data, ind) {
-    console.log(data);
+function creat_card(fruits) {
+  fruits.forEach(function (data, ind) {
+    console.log(fruits);
 
     var card = `
 
@@ -150,7 +150,7 @@ function del(ele) {
   console.log("element in array" + fruits);
 
   display_box.innerHTML = "";                //empty the display box to display updated array
-  creat_card();                             // calling aggaing create_card() to update U.I
+  creat_card(fruits);                 // calling aggaing create_card() to update U.I
 }                                           //end of delete function
 
 function filter_with_name(){

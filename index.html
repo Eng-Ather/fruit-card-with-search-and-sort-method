@@ -21,33 +21,35 @@
 
 <body>
 
-    <!-- sreach bar -->
+    <h1 class="text-3xl text-center text-red-500 underline bg-red-100 py-2"> Fruit Cards </h1>
 
-    <div class="searc_bar bg-blue-100 py-2">
+    <!-- ___________________________________sreach bar _______________________________________________ -->
 
-        <span>
+    <div class=" css_class_for_search_bar">
+
+        <span class="css_class_for_serach_button">
             <input type="text" id="name_search_field" placeholder="search with title" class="text-center">
             <button class="bg-amber-300 font-bold hover:bg-black text-red-500 hover:text-white  
               px-4 rounded" onclick="filter_with_name()"> Search </button>
         </span>
-        <span>
-        <button class="bg-amber-300 font-bold hover:bg-black text-red-500 hover:text-white 
-        px-4 rounded" onclick="sort_atoz()"> A to Z </button>
 
-        <button class="bg-amber-300 font-bold hover:bg-black text-red-500 hover:text-white 
-         px-4 rounded" onclick="sort_ztoa()"> Z to A </button>
-         </span>
+        <span class="css_class_for_sort_button">
+            <!-- A to Z sort button -->
+            <button class=" bg-amber-300 font-bold hover:bg-black text-red-500 hover:text-white 
+               px-4 rounded" onclick="sort_atoz()"> A to Z </button>
+
+               <!-- Z to A sort button -->
+            <button class="bg-amber-300 font-bold hover:bg-black text-red-500 hover:text-white 
+                px-4 rounded" onclick="sort_ztoa()"> Z to A </button>
+        </span>
 
     </div>
     <!-- __________________________ search bar ends here________________________ -->
 
-    <h1 class="text-3xl text-center text-red-500 underline bg-red-100 py-2"> Fruit Cards </h1>
-
-
 
     <div id="display_box" class=" rounded overflow-hidden shadow-lg mx-6 "></div>
 
-<!-- 
+    <!-- 
     <a href="product_change.html" target="_blank" class="bg-gray-300 hover:bg-black text-black
      hover:text-white font-bold py-2 px-4 rounded"> Add New Product</a> -->
 
